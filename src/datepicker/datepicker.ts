@@ -369,10 +369,7 @@ export class NgbDatepicker implements OnDestroy,
 
   onKeyDown(event: KeyboardEvent) { this._keyMapService.processKey(event); }
 
-  onNavigateDateSelect(date: NgbDate) {
-    this._service.open(date);
-    this.onDateSelect(date);
-  }
+  onNavigateDateSelect(date: NgbDate) { this._service.open(date); }
 
   onNavigateEvent(event: NavigationEvent) {
     switch (event) {
